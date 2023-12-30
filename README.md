@@ -1,6 +1,6 @@
 # Dice Roller App
 
-<image src="" height=350 width=250 />
+<image src="https://github.com/qur786/react-native-dice/assets/79472606/a1027c58-c38d-4310-84f1-a1aa3c72663d" height=350 width=250 />
 
 This simple and intuitive dice rolling app is built using React Native, designed to provide a digital alternative to physical dice.
 
