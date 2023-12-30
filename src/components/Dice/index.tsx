@@ -1,13 +1,6 @@
 import React, { useMemo, useState } from "react";
-import {
-  Pressable,
-  Image,
-  Text,
-  PressableProps,
-  ImageProps,
-  StyleSheet,
-  Vibration,
-} from "react-native";
+import { Pressable, Image, Text, StyleSheet, Vibration } from "react-native";
+import type { PressableProps, ImageProps } from "react-native";
 
 export function Dice() {
   const [diceNumber, setDiceNumber] = useState(6);
