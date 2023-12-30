@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     borderWidth: 2,
     backgroundColor: "#01CBC6",
-    borderColor: "#8B78E6",
+    borderColor: "#2F363F",
   },
   actionBtnText: {
     fontSize: 24,
