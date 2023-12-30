@@ -6,12 +6,14 @@ import {
   PressableProps,
   ImageProps,
   StyleSheet,
+  Vibration,
 } from "react-native";
 
 export function Dice() {
   const [diceNumber, setDiceNumber] = useState(6);
 
   const handleDiceRollPress: PressableProps["onPress"] = () => {
+    Vibration.vibrate(300);
     setDiceNumber(() => {
       return Math.floor(Math.random() * 6 + 1);
     });
