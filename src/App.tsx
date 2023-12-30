@@ -1,15 +1,36 @@
 import React from "react";
-import { Pressable, SafeAreaView, View, Image } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Dice } from "./components/Dice";
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView>
-      <View>
-        <Image source={{ uri: "" }} />
-        <Pressable />
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.headerText}>Dice</Text>
+      <View style={styles.diceContainer}>
+        <Dice />
       </View>
     </SafeAreaView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#EAF0F1",
+  },
+  diceContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    rowGap: 24,
+  },
+  headerText: {
+    fontSize: 36,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "#2F363F",
+    marginTop: 32,
+  },
+});
 
 export default App;
